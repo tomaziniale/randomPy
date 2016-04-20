@@ -2,7 +2,7 @@
 #One small letter, surrounded by EXACTLY three big bodyguards on each of its sides.
 #http://www.pythonchallenge.com/pc/def/equality.html
 
-text = open('equality.txt','r').read()
+text = open('pythonChallenge/equality.txt','r').read()
 #text = "SsYjzTfACZPVMAyHWLwDTLsNUfzmzZLPNFmNoVHm"
 
 up = []
@@ -30,3 +30,7 @@ for i,c in enumerate(text):
         if hit == 8: print(c)
 
 print('end')
+
+#eq 2
+znaki = [""] * 9
+print (znaki)
