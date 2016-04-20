@@ -32,5 +32,19 @@ for i,c in enumerate(text):
 print('end')
 
 #eq 2
-znaki = [""] * 9
-print (znaki)
+part = [""] * 9
+for c in text:    
+    del part[0]
+    part.append(c)
+    if not part[0].isupper() and \
+        part[1].isupper() and \
+        part[2].isupper() and \
+        part[3].isupper() and \
+        not part[4].isupper() and \
+        part[5].isupper() and \
+        part[6].isupper() and \
+        part[7].isupper() and \
+        not part[8].isupper():
+            print (part[4])
+            
+print ('end 2')
