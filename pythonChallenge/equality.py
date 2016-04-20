@@ -1,6 +1,7 @@
-#equality
-#One small letter, surrounded by EXACTLY three big bodyguards on each of its sides.
-#http://www.pythonchallenge.com/pc/def/equality.html
+# Level 3
+# equality
+# One small letter, surrounded by EXACTLY three big bodyguards on each of its sides.
+# http://www.pythonchallenge.com/pc/def/equality.html
 
 text = open('pythonChallenge/equality.txt','r').read()
 #text = "SsYjzTfACZPVMAyHWLwDTLsNUfzmzZLPNFmNoVHm"

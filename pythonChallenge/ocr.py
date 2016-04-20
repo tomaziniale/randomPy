@@ -1,3 +1,4 @@
+# Level 2
 # OCR
 # http://www.pythonchallenge.com/pc/def/ocr.html
 text = open('texto.txt', 'r').read()
