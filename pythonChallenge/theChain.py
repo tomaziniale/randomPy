@@ -8,21 +8,21 @@
 import urllib.request
 
 url = "http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing="
-data = b'12345'
-next = data
+data = "12345"
 results = []
 
-def filterNothingValue(data):
-    return (str(data).split(' ')[-1:][0])
+def filterNothingValue(val):
+    return (str(val).split(' ')[-1:][0])
 
-for i in range(0,7):
-    with urllib.request.urlopen(url) as f:
-        next = f.read().decode("utf-8")
-        results.append(next)        
-    url += filterNothingValue(next)
-                            
-for line in results: print(line + "\n")
+for i in range(0,400):    
+    rurl = url + filterNothingValue(data)    
+    with urllib.request.urlopen(rurl) as f:
+        data = f.read().decode("utf-8")
+        results.append(data)
+    if "nothing" not in data: 
+        print("hint was found at: " + str(i) + ": " + data)
+    if "html" in data: break
+        
+#for line in results: print(line + "\n")
 
 print ("end")
-
-#still in dev...
